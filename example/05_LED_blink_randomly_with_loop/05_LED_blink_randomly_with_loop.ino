@@ -1,9 +1,9 @@
-byte LEDs[4] = {2,3,4,5}; // 使用陣列定義 LED 腳位為2 ~ 5
+byte LEDs[3] = {2,3,4}; // 使用陣列定義 LED 腳位為2 ~ 5
 byte LED_pin = 0;         // 設定想要控制的 LED 腳位編號
 byte t = 0;               // 設定要持續多少秒
 
 void setup() {
-  for(byte i = 1;i<5;i++) {   // 設定腳位 2 ~ 5 為輸出
+  for(byte i = 0;i<3;i++) {   // 設定腳位 2 ~ 5 為輸出
     pinMode(LEDs[i],OUTPUT);      // 同時設定低電位 
     digitalWrite(LEDs[i],LOW);
   }
